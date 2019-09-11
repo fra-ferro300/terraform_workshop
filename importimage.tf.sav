@@ -1,0 +1,14 @@
+resource "oci_core_image" "Alfresco_image" {
+    #Required
+    compartment_id = "${var.compartment_ocid}"
+
+    #Optional
+    display_name = "Alfresco image"
+    launch_mode = "NATIVE"
+
+    image_source_details {
+        source_type = "objectStorageUri"
+        source_uri = "https://objectstorage.eu-frankfurt-1.oraclecloud.com/p/RDqhdCPkgJ6tG0X_R7NxRB0pOW8eOTkye_-NVZZaaGM/n/facinoroso74/b/CustomImage/o/AlfrescoComputeImage"
+
+    }
+}

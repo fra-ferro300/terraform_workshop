@@ -1,0 +1,23 @@
+### Substitute USERNAME to correct the path
+### Substitute the OCIDs, fingerprints and keys with the correct ones for your environment
+### File for Linux and OS X Users in shell environment
+### Authentication details
+export TF_VAR_tenancy_ocid=ocid1.tenancy.oc1..aaaaaaaaqxfunbsz2os6qg4lbz2gll5zelye5awfvdav5jpuj5bnsewx6mmq
+export TF_VAR_user_ocid=ocid1.user.oc1..aaaaaaaa6wiijtmbw63a63npazny7n5urd4xkrfls5wwyodswfxxyxd3vzga
+export TF_VAR_fingerprint=e9:01:06:29:74:1d:74:4f:20:43:8a:3e:ce:e3:64:d1
+export TF_VAR_private_key_path=~/.oci/oci_api_key.pem
+### Compartment
+export TF_VAR_compartment_ocid=ocid1.compartment.oc1..aaaaaaaa5wbxn5b6hrxevpapgc6ezj3hwcropuxozpsqsht5xa6tltwqef6a
+
+### Public/private keys used on the instances
+export TF_VAR_ssh_public_key=$(cat /home/francesco/.ssh/id_rsa.pub)
+export TF_VAR_ssh_private_key=$(cat /home/francesco/.ssh/id_rsa)
+
+### Region
+export TF_VAR_region=eu-frankfurt-1
+
+### Logging di Terraform
+#export TF_LOG=DEBUG
+#export TF_TF_LOG_PATH=~/logs
+
+
